@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mer"
+    android:padding="15dp">
+
+
+
+    <TextView
+        android:id="@+id/tvTitreValider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="Informations personnelles"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        ></TextView>
+    <TextView
+        android:id="@+id/tvCivilite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titre"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvTitreValider"></TextView>
+
+    <Spinner
+        android:id="@+id/spCivilite"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tvCivilite"
+        android:background="@color/dark_cyan"
+        android:entries="@array/Civilite"
+        android:spinnerMode="dialog"></Spinner>
+    <TextView
+        android:id="@+id/tvLabelNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/spCivilite"></TextView>
+    <EditText
+        android:id="@+id/etNomClient"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="Saisir votre Nom"
+        android:textSize="18sp"
+        android:textColor="@color/mer"
+        android:background="@color/dark_cyan"
+        android:layout_below="@+id/tvLabelNom"
+        android:layout_marginTop="5dp"></EditText>
+
+    <TextView
+        android:id="@+id/tvLabelPrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prénom"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etNomClient"></TextView>
+
+    <EditText
+        android:id="@+id/etPrenomClient"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="Saisir votre Prénom"
+        android:textSize="18sp"
+        android:textColor="@color/mer"
+        android:background="@color/dark_cyan"
+        android:layout_below="@+id/tvLabelPrenom"
+        android:layout_marginTop="5dp"></EditText>
+
+    <TextView
+        android:id="@+id/tvNationalite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nationalité"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etPrenomClient"></TextView>
+
+    <Spinner
+        android:id="@+id/spNationalite"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tvNationalite"
+        android:background="@color/dark_cyan"
+        android:entries="@array/Nationalite"
+        android:spinnerMode="dialog"></Spinner>
+
+    <TextView
+        android:id="@+id/tvLabelPasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numéro de passeport"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/spNationalite"></TextView>
+
+    <EditText
+        android:id="@+id/etNumPasse"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="Passeport"
+        android:textSize="18sp"
+        android:textColor="@color/mer"
+        android:background="@color/dark_cyan"
+        android:layout_below="@+id/tvLabelPasse"
+        android:layout_marginTop="5dp"
+        android:inputType="text"></EditText>
+    <TextView
+        android:id="@+id/tvLabeltel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Téléphone"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etNumPasse"></TextView>
+
+    <EditText
+        android:id="@+id/etTelephone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="Merci de préfixer l'id de pays ex: +212"
+        android:textSize="18sp"
+        android:textColor="@color/mer"
+        android:background="@color/dark_cyan"
+        android:layout_below="@+id/tvLabeltel"
+        android:layout_marginTop="5dp"
+        android:inputType="phone"></EditText>
+    <TextView
+        android:id="@+id/tvLabelEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse Email"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etTelephone"></TextView>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="exemple@gmail.com"
+        android:textSize="18sp"
+        android:textColor="@color/mer"
+        android:background="@color/dark_cyan"
+        android:layout_below="@+id/tvLabelEmail"
+        android:layout_marginTop="5dp"
+        android:inputType="textEmailAddress"></EditText>
+
+    <Button
+        android:id="@+id/btnContinuer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continuer"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/transparent"
+        android:layout_below="@+id/etEmail"
+        android:layout_centerHorizontal="true"></Button>
+
+
+
+
+
+
+</RelativeLayout>

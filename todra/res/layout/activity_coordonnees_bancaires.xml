@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mer"
+    android:padding="15dp">
+
+
+
+    <TextView
+        android:id="@+id/tvinformationsCB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="Informations CB"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        ></TextView>
+    <TextView
+        android:id="@+id/tvTypeCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type de carte bancaire"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvinformationsCB"></TextView>
+    <RadioGroup
+        android:id="@+id/rgTypeCB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTypeCB"
+        android:layout_marginTop="5dp">
+        <RadioButton
+            android:id="@+id/rdVisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" VISA"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            ></RadioButton>
+        <RadioButton
+            android:id="@+id/rdMastercard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MasterCard"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            ></RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvLabelNumeroCarte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numéro de carte"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rgTypeCB"></TextView>
+    <EditText
+        android:id="@+id/etNumeroCarte"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textColor="@color/mer"
+        android:background="@color/dark_cyan"
+        android:layout_below="@+id/tvLabelNumeroCarte"
+        android:layout_marginTop="5dp"
+        android:inputType="number"></EditText>
+
+    <TextView
+        android:id="@+id/tvLabelCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code sécurité"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etNumeroCarte"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/etCodeSecurite"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textColor="@color/mer"
+        android:background="@color/dark_cyan"
+        android:layout_below="@+id/tvLabelCode"
+        android:layout_marginTop="5dp"
+        android:inputType="number"></EditText>
+
+    <TextView
+        android:id="@+id/tvLabelPorteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom de porteur"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etCodeSecurite"></TextView>
+
+
+
+    <EditText
+        android:id="@+id/etPorteur"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textColor="@color/mer"
+        android:background="@color/dark_cyan"
+        android:layout_below="@+id/tvLabelPorteur"
+        android:layout_marginTop="5dp"
+        android:inputType="text"></EditText>
+
+
+    <Button
+        android:id="@+id/btnFinaliserReservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finaliser la réservation"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/transparent"
+        android:layout_below="@+id/etPorteur"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"></Button>
+
+
+
+
+
+
+</RelativeLayout>

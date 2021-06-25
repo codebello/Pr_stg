@@ -1,0 +1,74 @@
+{
+  "trajets":[
+    {
+      "Nom":"TangerMED - Barcelone",
+      "Distance":200,
+      "Duree": 2
+    },
+    {
+      "Nom":"TangerMED - Sète",
+      "Distance":1500,
+      "Duree": 37
+    },
+    {
+      "Nom":"TangerMED - Marseille",
+      "Distance":1600,
+      "Duree": 39
+    },
+    {
+      "Nom":"TangerMED - Genes",
+      "Distance":2000,
+      "Duree": 47
+    },
+    {
+      "Nom":"TangerMED - Oran",
+      "Distance":400,
+      "Duree": 5
+    },
+    {
+      "Nom":"TangerMED - Alméria",
+      "Distance":150,
+      "Duree": 2
+    },
+    {
+      "Nom":"TangerMED - Nice",
+      "Distance":1800,
+      "Duree": 40
+    },
+    {
+      "Nom":"Nador - Barcelone",
+      "Distance":220,
+      "Duree": 2
+    },
+    {
+      "Nom":"Barcelone - Sète",
+      "Distance":300,
+      "Duree": 4
+    },
+    {
+      "Nom":"Barcelone - TangerMED",
+      "Distance":200,
+      "Duree": 2
+    },
+    {
+      "Nom":"Marseille - Barcelone",
+      "Distance":600,
+      "Duree": 8
+    },
+    {
+      "Nom":"Alméria - Genes",
+      "Distance":900,
+      "Duree": 12
+    },
+    {
+      "Nom":"Tunis - Marseille",
+      "Distance":700,
+      "Duree": 9
+    },
+    {
+      "Nom":"Alger - Marseille",
+      "Distance":600,
+      "Duree": 7
+    }
+  ]
+}

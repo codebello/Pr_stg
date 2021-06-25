@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:background="@color/mer">
+    <Button
+        android:id="@+id/btnAllerSimple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aller Simple"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/mer"
+        android:textSize="12sp"
+        android:layout_marginRight="4dp"></Button>
+
+    <Button
+        android:id="@+id/btnAllerRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btnAllerSimple"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/mer"
+        android:text="Aller Retour"
+        android:textSize="12sp"></Button>
+    <TextView
+        android:id="@+id/tvTrajet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choisissez votre trajet "
+        android:textColor="@color/white"
+        android:layout_below="@+id/btnAllerSimple"
+        android:layout_marginTop="7dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="9dp"></TextView>
+
+    <Spinner
+        android:id="@+id/spTrajet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTrajet"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:background="@color/white"
+        android:spinnerMode="dialog"></Spinner>
+    <TextView
+        android:id="@+id/tvDateDepart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date de départ "
+        android:textColor="@color/white"
+        android:layout_below="@+id/spTrajet"
+        android:layout_marginTop="6dp"
+        android:textSize="18sp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="9dp"></TextView>
+    <Button
+        android:id="@+id/btnDateDepart"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@+id/spTrajet"
+        android:layout_toRightOf="@+id/tvDateDepart"
+        android:backgroundTint="@color/white"
+        android:text="01/01/2021"
+        android:textColor="@color/mer"
+        android:textSize="15sp"
+        android:onClick="ouvrirDatePicker"></Button>
+
+    <TextView
+        android:id="@+id/tvDateRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date de retour "
+        android:textColor="@color/white"
+        android:layout_below="@+id/tvDateDepart"
+        android:layout_marginTop="6dp"
+        android:textSize="18sp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="9dp"></TextView>
+
+        <Button
+            android:id="@+id/btnDateRetour"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_below="@+id/btnDateDepart"
+            android:layout_toRightOf="@+id/tvDateRetour"
+            android:backgroundTint="@color/white"
+            android:text="01/01/2021"
+            android:textColor="@color/mer"
+            android:textSize="15sp"
+            android:onClick="ouvrirDatePicker"></Button>
+
+        <TextView
+            android:id="@+id/tvAdultes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adultes "
+            android:textColor="@color/white"
+            android:layout_below="@+id/tvDateRetour"
+            android:layout_marginTop="7dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="9dp"
+            android:onClick="ouvrirDatePicker"></TextView>
+
+            <Spinner
+                android:id="@+id/spAdultes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnDateRetour"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/tvAdultes"
+                android:entries="@array/adultes"></Spinner>
+
+                    <TextView
+                        android:id="@+id/tvEnfants"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enfants"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/tvAdultes"
+                        android:layout_marginTop="7dp"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="9dp"></TextView>
+
+                        <Spinner
+                            android:id="@+id/spEnfants"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/spAdultes"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="14dp"
+                            android:layout_toRightOf="@+id/tvEnfants"
+                            android:entries="@array/Enfants"></Spinner>
+
+                            <RadioGroup
+                                android:id="@+id/rgMoyenTr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvEnfants"
+                                android:layout_marginBottom="9dp">
+                                <RadioButton
+                                    android:id="@+id/rdPietons"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Piétons Ou Byclite"
+                                    android:textSize="17sp"
+                                    android:textColor="@color/white"
+                                    ></RadioButton>
+                                <RadioButton
+                                    android:id="@+id/rdVehicule"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Avec Véhicule"
+                                    android:textSize="17sp"
+                                    android:textColor="@color/white"
+                                    ></RadioButton>
+                            </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spVehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgMoyenTr"
+        android:layout_marginBottom="12dp"
+        android:background="@color/white"
+        android:entries="@array/Vehicules"
+        android:spinnerMode="dialog"
+        android:textColor="@color/mer"
+        android:textSize="17sp"
+        android:visibility="invisible"></Spinner>
+                            <Button
+                                android:id="@+id/btnChercher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Chercher"
+                                android:textColor="@color/mer"
+                                android:backgroundTint="@color/white"
+                                android:layout_below="@id/spVehicule"
+                                android:layout_centerHorizontal="true"></Button>
+
+
+
+
+
+</RelativeLayout>

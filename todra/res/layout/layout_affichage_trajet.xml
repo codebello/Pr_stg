@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mer">
+    <TextView
+        android:id="@+id/tv_layout_label_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="type de réservation : "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:id="@+id/tv_layout_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/tv_layout_label_type"></TextView>
+    <TextView
+        android:id="@+id/tv_layout_label_trajet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trajet : "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv_layout_label_type"></TextView>
+    <TextView
+        android:id="@+id/tv_layout_trajet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/tv_layout_label_trajet"
+        android:layout_below="@+id/tv_layout_type"></TextView>
+    <TextView
+        android:id="@+id/tv_layout_label_dateDepart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date de départ : "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv_layout_label_trajet"></TextView>
+    <TextView
+        android:id="@+id/tc_layout_dateDepart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/tv_layout_label_dateDepart"
+        android:layout_below="@+id/tv_layout_trajet"></TextView>
+    <TextView
+        android:id="@+id/tv_layout_label_dateRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date de retour : "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_layout_label_dateDepart"></TextView>
+    <TextView
+        android:id="@+id/tc_layout_dateRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/tv_layout_label_dateRetour"
+        android:layout_below="@id/tc_layout_dateDepart"></TextView>
+    <TextView
+        android:id="@+id/tv_layout_label_montant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Montant : "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_layout_label_dateRetour"></TextView>
+    <TextView
+        android:id="@+id/tv_layout_montant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/tv_layout_label_montant"
+        android:layout_below="@id/tc_layout_dateRetour"></TextView>
+    <Button
+        android:id="@+id/btnFinaliser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réserver"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/transparent"
+        android:layout_below="@+id/tv_layout_label_montant"
+        android:layout_centerHorizontal="true"
+        ></Button>
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">toudghaAgence</string>
+    <string-array name="Vehicules">
+        <item>Voiture</item>
+        <item>Moto</item>
+        <item>Fourgonnette</item>
+        <item>Camion</item>
+    </string-array>
+    <string-array name="Civilite">
+        <item>Mr</item>
+        <item>Mme</item>
+        <item>Mlle</item>
+    </string-array>
+
+    <string-array name="Nationalite">
+        <item>Marocaine</item>
+        <item>Espagnole</item>
+        <item>Francaise</item>
+        <item>Algérienne</item>
+        <item>Tunisienne</item>
+        <item>Allemande</item>
+        <item>Italienne</item>
+        <item>Portugaise</item>
+        <item>Américaine</item>
+    </string-array>
+
+    <string-array name="adultes">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="Enfants">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+</resources>
